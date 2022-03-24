@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: rgb(51, 51, 51);
+}
+
+path,
+i,
+svg {
+  pointer-events: none;
+}
+/* Global styles */
+
+.colors {
+  min-height: 80vh;
+  display: flex;
+  color: rgb(212, 212, 212);
+}
+
+.color {
+  min-height: 80vh;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  overflow: hidden;
+}
+
+.color h2 {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.sliders {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  bottom: 0%;
+  background: white;
+  opacity: 0;
+  pointer-events: none;
+  padding: 2rem;
+  width: 80%;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  /* We are adding an adjustment class */
+  transform: translateY(100px);
+  transition: all 0.5s ease-in-out;
+}
+
+.sliders button,
+.close-save {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.3rem;
+  border-top-right-radius: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.sliders.active {
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: all;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+}
+
+.panel {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 20vh;
+}
+
+.panel button {
+  font-size: 1.2rem;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  background: rgb(31, 32, 63);
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.panel p {
+  font-size: 1.2rem;
+}
+
+.library-panel,
+.generate-panel,
+.save-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adjust,
+.lock {
+  font-size: 2rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 2rem 0rem;
+}
+
+/* Slider sutff */
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  position: relative;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.copy-container,
+.save-container,
+.library-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.copy-popup,
+.save-popup,
+.library-popup {
+  background: white;
+  border-radius: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: transform 0.5s ease;
+  transform: translateY(-2rem);
+  min-width: 25%;
+  min-height: 25vh;
+}
+
+.copy-popup h4,
+.save-popup h4,
+.library-popup h4 {
+  font-size: 2rem;
+}
+
+.copy-container.active,
+.save-container.active,
+.library-container.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.copy-popup.active,
+.save-popup.active,
+.library-popup.active {
+  transform: translateY(0rem);
+}
+
+span {
+  font-weight: 600;
+  font-style: bold;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.save-name {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
