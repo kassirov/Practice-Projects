@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+}
+
+i,
+svg {
+  pointer-events: none;
+}
+/* Global styles */
+
+.sequencer {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin: 0rem 2rem;
+}
+
+.controls button {
+  background: grey;
+  padding: 1rem;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.kick-pad,
+.snare-pad,
+.hihat-pad {
+  height: 5rem;
+  width: 5rem;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+
+.kick-track,
+.snare-track,
+.hihat-track {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.kick,
+.snare,
+.hihat {
+  display: flex;
+}
+
+/* Pads */
+
+.pad {
+  transition: all 0.5s ease;
+}
+
+.kick-pad {
+  background: lightblue;
+}
+
+.snare-pad {
+  background: rgb(170, 93, 170);
+}
+
+.hihat-pad {
+  background: rgb(235, 175, 64);
+}
+
+/* Active pads */
+
+.kick-pad.active {
+  background: rgb(123, 204, 231);
+}
+
+.snare-pad.active {
+  background: rgb(167, 41, 167);
+}
+
+.hihat-pad.active {
+  background: rgb(231, 150, 0);
+}
+
+/* Play button */
+
+.play {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background: grey;
+  border: none;
+  cursor: pointer;
+  margin-top: 3rem;
+  color: white;
+}
+
+/* Mute button */
+
+.mute.active {
+  background: red;
+}
+
+/* select */
+
+select {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.tempo {
+  margin: 3rem;
+  width: 30%;
+}
+
+.tempo P {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+
+.tempo-slider {
+  padding: 0.2rem;
+  -webkit-appearance: none;
+  margin: 1rem 0rem;
+  width: 100%;
+  position: relative;
+  background: #adadad;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
+/* Animation of the pads */
+
+@keyframes playTrack {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
