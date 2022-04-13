@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Menu</title>
+  </head>
+  <body>
+    <section class="menu">
+      <div class="title">
+        <h1>Our Menu</h1>
+      </div>
+      <div class="underline"></div>
+      <div class="btn-container">
+        <button class="filter-btn" type="button" data-id="all">All</button>
+        <button class="filter-btn" type="button" data-id="breakfast">
+          Breakfast
+        </button>
+        <button class="filter-btn" type="button" data-id="lunch">Lunch</button>
+        <button class="filter-btn" type="button" data-id="shakes">
+          Shakes
+        </button>
+        <button class="filter-btn" type="button" data-id="dinner">
+          Dinner
+        </button>
+      </div>
+      <div class="section-center">
+        <article class="menu-item">
+          <img
+            src="./menu-fotos/pancakes.jpg"
+            class="photo"
+            alt="menu item"
+          />
+          <div class="item-info">
+            <header class="header">
+              <h4 class="item-title">Buttermilk pancakes</h4>
+              <h4 class="price">$15</h4>
+            </header>
+            <p class="item-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit praesentium cumque error nemo cupiditate iusto earum
+              recusandae repudiandae accusamus animi!
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <script src="./menu.js"></script>
+  </body>
+</html>
