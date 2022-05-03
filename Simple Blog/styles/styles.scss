@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: #fafafa;
+}
+
+.header-section {
+    width: 100%;
+    height: 80rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.steve {
+    max-width: 40rem;
+    max-height: 40rem;
+    border-radius: 50%;
+    margin-left: 40%;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.header-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacts {
+    padding: 3rem 0rem 3rem 0rem;
+    width: 90%;
+}
+
+.contact-imgs {
+    padding-right: 2rem
+}
+
+.name {
+    width: 90%;
+    padding: 3rem 0rem 3rem 0rem;
+    font-size: 4rem;
+}
+
+.name h2 {
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+}
+
+.blurb {
+    padding: 3rem 0rem 3rem 0rem;
+    font-size: 2rem;
+    width: 80%;
+    font-family: "poppins", sans-serif;
+    font-weight: 300;
+
+}
+
+#posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    max-width: 100%;
+    outline: 0.2px solid rgb(197, 197, 197);
+
+}
+
+#post {
+    // background-color: green;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 0.2px solid rgb(173, 173, 173);
+}
+
+.post-pic {
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    margin-top: 9%;
+}
+
+.date {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: rgb(155, 155, 155);
+    margin: auto;
+}
+
+// media quieres 
+
+@media screen and (max-width: 1462px) {
+    .steve {
+        margin-left: 30%;
+    }
+}
+
+@media screen and (max-width: 1245px) {
+    .steve {
+        margin-left: 30%;
+        max-height: 30rem;
+        max-width: 30rem;
+    }
+    .name {
+        font-size: 3rem;
+    }
+    .blurb {
+        font-size: 1.6rem;
+    }
+    .header-section {
+        height: 55rem;
+    }
+    .contacts, .blurb, .name {
+    padding: 2rem 0rem 2rem 0rem;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .steve {
+        max-width: 23rem;
+        max-height: 23rem;
+    }
+    .contacts, .blurb, .name {
+        padding: 1rem 0rem 1rem 0rem;
+        width: 90%;
+    }
+    .name {
+        font-size: 2.3rem;
+    }
+    .blurb {
+        font-size: 1.5rem;
+    }
+    .header-section {
+        height: 45rem;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+    .header-section {
+        height: 35rem;
+    }
+    .steve {
+        margin-left: 25%;
+        max-height: 20rem;
+        max-width: 20rem;
+    }
+    .name {
+        font-size: 1.9rem;
+    }
+    .blurb {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 590px) {
+    .header-section {
+        height: 30rem;
+    }
+    .steve {
+        margin-left: 20%;
+        max-height: 17rem;
+        max-width: 17rem;
+    }
+    .name {
+        font-size: 1.7rem;
+    }
+    .blurb {
+        font-size: 1.1rem;
+    }
+    .contacts, .blurb, .name {
+        padding: 0.5rem 0rem 0.5rem 0rem;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .header-section {
+        height: 30rem;
+    }
+    .steve {
+        margin-left: 20%;
+        max-height: 17rem;
+        max-width: 17rem;
+    }
+    .name {
+        font-size: 1.5rem;
+    }
+    .blurb {
+        font-size: 1.1rem;
+    }
+    .contacts, .blurb, .name {
+        padding: 0.5rem 0rem 0.5rem 0rem;
+        width: 90%;
+    }
+}
