@@ -1,0 +1,347 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: black;
+}
+
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 1), transparent), url(../photos/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+nav {
+    min-height: 10rem;
+    height: 10rem;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 4rem;
+    font-weight: 100;
+    color: white;
+}
+
+.nav-links {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.nav-links li {
+    padding: 0rem 0rem 0rem 7rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: "poppins", sans-serif;
+    color: white;
+
+}
+
+.est, .action {
+    font-family: 'Dancing Script', cursive;
+    font-size: 6rem;
+}
+
+.welcome {
+    font-family: 'Rock Salt', cursive;
+    font-size: 6rem;
+}
+
+.intro {
+    position: absolute;
+    z-index: 99;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-top: 20rem;
+    padding: 20px;
+    justify-self: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+    color: white;
+}
+
+.cocktails-title {
+    font-size: 4rem;
+    font-family: 'Rock Salt', cursive;
+    color: white;
+    margin: auto;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30rem;
+}
+
+.cocktails-section {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5rem;
+
+}
+
+
+
+.cocktail {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.cock-img {
+    max-height: 25rem;
+    border-radius: 50%;
+}
+
+.cocktails {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 50%;
+    grid-row-gap: 1rem;
+}
+
+.cocktail-name {
+    margin-top: 1rem;
+    font-size: 2.1rem;
+}
+
+.cocktail-price {
+    font-size: 2.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    display: grid;
+    grid-template-rows: (1,1fr);
+    font-size: 1.5rem;
+    font-family: "poppins", sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.cocktail-price, .cocktail-name {
+    font-family: 'Limelight', "poppins", sans-serif;
+    cursor: pointer;
+
+}
+
+.cocktail-photo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// .cocktail-photo  img {
+//     width: 55rem;
+// }
+
+.nameprice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+
+
+// hover cocktails  
+
+.cocktail-pic {
+    width: 55rem;
+    position: absolute;
+    opacity: 0;
+    transition: all 1s ease;
+    border-radius: 1rem;
+}
+
+.cocks h3 {
+    color: white;
+    font-size: 3rem;
+}
+
+.show {
+    opacity: 1;
+    z-index: 51;
+    color: #a87e2b;
+}
+
+.defolt {
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;;
+}
+
+
+// Food section
+
+
+.food-section {
+    min-height: 50rem;
+    margin: auto;
+    width: 90%;
+}
+
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 1rem;
+}
+
+.food-pic {
+    max-width: 30rem;
+    margin-bottom: 1rem;
+}
+
+.food-item {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.food-name, .food-price {
+    color: white;
+    font-family: 'Limelight', "poppins", sans-serif;
+    font-size: 2.1rem;
+}
+
+.food-name {
+    margin-bottom: 1rem
+}
+
+// Event section
+
+.event-title {
+    min-height: 20rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    font-family: 'Limelight', "poppins", sans-serif;
+}
+
+input {
+    border: 1px solid white;
+    background: none;
+    height: 4.5rem;
+    width: 17rem;
+    outline: none;
+    margin-right: 1.3rem;
+    color: white;
+    padding-left: 1rem;
+    font-family: "poppins", sans-serif;
+    font-size: 1.5rem;
+}
+
+button {
+    border: 1.5px solid #a87e2b;
+    background: none;
+    color: white;
+    height: 4.5rem;
+    width: 17rem;
+    outline: none;
+    font-size: 1.5rem;
+    font-size: "poppins", sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a87e2b;
+    color: white;
+}
+
+::placeholder {
+    font-family: "poppins", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    // padding-left: 1rem;
+}
+
+
+.event-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+// Footer section
+
+.contact-section {
+    min-height: 70rem;
+    color: white;
+    margin-top: 17rem;
+    position: relative;
+}
+
+.contact-section:before {
+    background-image: url("/photos/footer.jpg");
+    content: "";
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 90%;
+    margin: auto;
+}
+
+.contact-info {
+    // background-color: green;
+    font-family: "poppins", sans-serif;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.contact-info h2, .opening-hours h2 {
+    font-family: 'Limelight', "poppins", sans-serif;
+    font-size: 4rem;
+    margin-bottom: 8rem;
+}
+
+.opening-hours {
+    // background-color: blue;
+    font-family: "poppins", sans-serif;
+    font-size: 2.3rem;
+}
+
+.opening-hours p {
+    margin-bottom: 0.7rem;
+}
