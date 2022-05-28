@@ -1,0 +1,12 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Azeret Mono", monospace;
+}
+/*# sourceMappingURL=style.css.map */
