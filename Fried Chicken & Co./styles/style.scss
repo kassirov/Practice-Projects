@@ -210,7 +210,7 @@ body {
 }
 
 .contact-wrapper {
-  padding-top: 130px;
+  padding-top: 160px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -219,4 +219,203 @@ body {
 
 .socials img {
   padding-right: 2rem;
+  cursor: pointer;
+}
+
+// Media quieres
+
+@media screen and (max-width: 1260px) {
+  .hero-quote {
+    font-size: 4.1rem;
+  }
+  .span {
+    font-size: 2.7rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .logo {
+    font-size: 4rem;
+  }
+  .address {
+    font-size: 1.3rem;
+  }
+  .hero-quote {
+    font-size: 3.6rem;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .hero-quote {
+    font-size: 3.4rem;
+  }
+  .span {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero-quote {
+    font-size: 2.7rem;
+  }
+  .hero-wrapper {
+    grid-column-gap: 4rem;
+  }
+  // menu orientation changes
+  .menu-category {
+    grid-template-columns: repeat(1, 2fr);
+  }
+  .chicken-category {
+    grid-template-columns: repeat(1, 2fr);
+    grid-row-gap: 40px;
+  }
+  .beer-category {
+    grid-template-columns: repeat(1, 2fr);
+    grid-row-gap: 60px;
+  }
+  .wings {
+    margin: auto;
+  }
+  .tenders {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .hero-wrapper img {
+    // display: none;
+    width: 100%;
+  }
+  .hero-wrapper {
+    grid-template-columns: repeat(1, 2fr);
+    padding: 70px 0px 20px 0px;
+  }
+  .hero-quote {
+    min-height: 300px;
+    margin-top: 3rem;
+    font-size: 3.7rem;
+  }
+  .span {
+    font-size: 2.8rem;
+  }
+  .logo {
+    font-size: 3.5rem;
+  }
+  .address {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .address-footer {
+    font-size: 1.2rem;
+  }
+  .socials img {
+    max-height: 2.3rem;
+  }
+  .footer {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .logo {
+    font-size: 2.8rem;
+  }
+  .address {
+    font-size: 1rem;
+    padding-bottom: 0.4rem;
+  }
+  .address-footer {
+    font-size: 1.2rem;
+  }
+  .socials img {
+    max-height: 2.3rem;
+  }
+  .footer {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .come h1 {
+    font-size: 4rem;
+  }
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .address-footer {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+  }
+  .nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo {
+    margin-bottom: 0.5rem;
+    font-size: 4rem;
+  }
+  .address {
+    font-size: 1.3rem;
+  }
+  .span {
+    font-size: 2.3rem;
+  }
+  .hero-quote {
+    font-size: 3.4rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .come h1 {
+    font-size: 3.4rem;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  .address,
+  .address-footer {
+    font-size: 1rem;
+  }
+  .hero-quote {
+    font-size: 3rem;
+  }
+  .span {
+    font-size: 2.1rem;
+  }
+  .logo {
+    font-size: 3.7rem;
+  }
+  .item-title,
+  .item-price {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .hero-quote {
+    font-size: 2.7rem;
+  }
+  .span {
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .item-title,
+  .item-price {
+    font-size: 1.5rem;
+  }
+  .span {
+    font-size: 1.7rem;
+  }
+  .hero-quote {
+    min-height: 250px;
+  }
 }
