@@ -105,6 +105,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 .little-chicken {
@@ -128,4 +129,61 @@ body {
 .item-title,
 .item-price {
   font-size: 1.8rem;
+}
+
+// Chicken category
+
+.wings {
+  max-height: 800px;
+}
+
+.tenders {
+  width: 30rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.chicken-category {
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 70px;
+}
+
+.chicken-category img {
+  max-width: 100%;
+  border-radius: 54px;
+  border: 2px solid black;
+  box-shadow: 0 4px 0 0 black;
+}
+
+.spacer {
+  min-height: 100px;
+}
+
+// Beer category
+
+.beer-title {
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 2.5rem;
+  padding: 30px 0px 30px 0px;
+}
+
+.beer-category {
+  display: grid;
+  grid-template-columns: 1fr 450px;
+  grid-template-rows: auto;
+  grid-column-gap: 70px;
+}
+
+.beer-category img {
+  max-width: 100%;
+  border-radius: 54px;
+  border: 2px solid black;
+  box-shadow: 0 4px 0 0 black;
+}
+
+.spacer {
+  min-height: 100px;
 }
