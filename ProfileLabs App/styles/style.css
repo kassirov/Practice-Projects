@@ -501,4 +501,226 @@ i {
 .life-color {
   color: #ff9209;
 }
+
+.testimonials-section {
+  background-color: #f2f2f2;
+}
+
+.testimonials-title-wrapper {
+  margin: auto;
+  text-align: center;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.testimonials-title-wrapper h4 {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #525252;
+}
+
+.testimonials-title-wrapper h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+.testimonials-title-wrapper p {
+  font-size: 1.9rem;
+  color: #525252;
+}
+
+.testimonials-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+}
+
+.testimonial-div {
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.testimonial-div p {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.person-div h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.person-div h4 {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.person-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+}
+
+.person-pic {
+  max-height: 5rem;
+  margin-right: 2rem;
+}
+
+.download-title-wrapper {
+  margin: auto;
+  text-align: center;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.download-title-wrapper h4 {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #525252;
+}
+
+.download-title-wrapper h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+.download-title-wrapper p {
+  font-size: 1.9rem;
+  color: #525252;
+}
+
+.applestore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.applestore img {
+  height: 5.5rem;
+  cursor: pointer;
+}
+
+.faq {
+  background-color: #e5e5e5;
+}
+
+.faq-title {
+  margin-bottom: 3rem;
+}
+
+.faq h4 {
+  font-size: 3.7rem;
+  font-weight: 500;
+}
+
+.faq h3 {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+.faq-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+}
+
+.faq-div {
+  margin-bottom: 4rem;
+}
+
+.faq-div h5 {
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.faq-div p {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.footer-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f2f2f2;
+  position: relative;
+  overflow: hidden;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.socials img {
+  max-height: 3rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.footer-logo img {
+  max-height: 5rem;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.copyright h3 {
+  font-weight: 300;
+  font-size: 2rem;
+}
 /*# sourceMappingURL=style.css.map */
