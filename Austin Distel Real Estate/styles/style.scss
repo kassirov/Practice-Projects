@@ -88,7 +88,7 @@ body {
 
 // Listings
 
-.listing-images {
+.listing {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-row-gap: 30px;
@@ -113,7 +113,7 @@ body {
 .listing-info {
   display: grid;
   grid-template-columns: repeat(14, 1fr);
-  padding: 80px 0px 80px 0px;
+  padding: 80px 0px 150px 0px;
 }
 
 .house-info {
@@ -151,4 +151,49 @@ body {
 
 .bedrooms {
   margin-bottom: 2rem;
+}
+
+// Email Section
+
+.email {
+  background-color: #00608e;
+  padding: 180px 0px 180px 0px;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper input {
+  padding: 2rem;
+  margin: 0.5rem;
+  width: 270px;
+}
+
+.email-button {
+  padding: 2rem;
+  width: 120px;
+  font-size: 1.5rem;
+  border: none;
+  color: black;
+  cursor: pointer;
+  background-color: white;
+  margin-left: 0.5rem;
+}
+
+::placeholder {
+  font-size: 1.5rem;
+  color: black;
+  opacity: 0.5;
+}
+
+.follow {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: white;
+  padding: 5rem;
 }
