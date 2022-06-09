@@ -3,21 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-html {
-  font-size: 62.5%;
-}
-/* Global styles */
-
 body {
-  background-image: linear-gradient(120deg, #f6d365, #fda085);
+  background-image: linear-gradient(120deg, #2d5bf3e1 0%, #3f9ff8dc 100%);
   color: white;
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   min-height: 100vh;
 }
-
 header {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 header,
@@ -27,27 +20,23 @@ form {
   justify-content: center;
   align-items: center;
 }
-
 form input,
 form button {
-  padding: 0.5rem;
+  padding: 0.4rem;
   font-size: 2rem;
   border: none;
   background: white;
 }
-
 form button {
-  color: #d88771;
-  background: white;
+  color: #353535;
+  background: #f7fffe;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 form button:hover {
-  background: #d88771;
+  background: rgb(116, 116, 116);
   color: white;
 }
-
 .todo-container {
   display: flex;
   justify-content: center;
@@ -62,32 +51,32 @@ form button:hover {
 .todo {
   margin: 0.5rem;
   background: white;
+  font-size: 1.5rem;
   color: black;
-  font-size: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: all 1s ease;
 }
-
+.filter-todo {
+  padding: 1rem;
+}
 .todo li {
   flex: 1;
 }
 
-.complete-btn,
-.trash-btn {
-  background: #fcfcfc;
-  color: #d88771;
+.trash-btn,
+.complete-btn {
+  background: #fd2525;
+  color: white;
   border: none;
   padding: 1rem;
   cursor: pointer;
+  font-size: 1rem;
 }
-
 .complete-btn {
-  background: lightgreen;
-  color: white;
+  background: rgb(31, 252, 86);
 }
-
 .todo-item {
   padding: 0rem 0.5rem;
 }
@@ -97,24 +86,26 @@ form button:hover {
   pointer-events: none;
 }
 
-.completed {
-  background: lightgreen;
-  text-decoration: line-through;
-  color: white;
-  opacity: 0.5;
-}
-
 .fall {
-  transform: translateY(8rem) rotateZ(20deg);
+  transform: translateY(10rem) rotateZ(20deg);
   opacity: 0;
 }
 
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/*CUSTOM SELECTOR */
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
-  outline: none;
-  border: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
 }
 
 .select {
@@ -122,26 +113,20 @@ select {
   position: relative;
   overflow: hidden;
 }
+select {
+  color: #353535;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  width: 12rem;
+}
 
 .select::after {
   content: "\25BC";
   position: absolute;
-  background: #ff6f47;
   top: 0;
   right: 0;
   padding: 1rem;
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-
-select {
-  color: #ff6f47;
-  width: 15rem;
+  background: #353535;
   cursor: pointer;
-  padding: 1rem;
-}
-
-.select:hover::after {
-  background: white;
-  color: #ff6f47;
+  pointer-events: none;
 }
