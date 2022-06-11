@@ -24,5 +24,22 @@ let weather = {
     document.querySelector(".humidity").innerText =
       "Humidity: " + humidity + "%";
     document.querySelector(".wind").innerText = "wind: " + speed + "km/h";
+    document.body.style.backgroundImage =
+      "url('https://source.unsplash.com/1600x900/?" + name + "')";
+  },
+  search: function() {
+    this.fetchWeather(document.querySelector(".search-bar input").value);
   }
 };
+
+document
+  .querySelector(".search-bar button")
+  .addEventListener("click", function() {
+    weather.search();
+  });
+
+document.querySelector(".search-bar").addEventListener("keyup", function(e) {
+  if (e.key === "Enter") {
+    weather.search();
+  }
+});

@@ -12,6 +12,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background-image: url("../imgs/background.jpg");
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
