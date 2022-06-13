@@ -12,4 +12,8 @@ html {
 body {
   font-family: "Poppins", sans-serif;
 }
+
+.activated {
+  background-color: #777;
+}
 /*# sourceMappingURL=style.css.map */

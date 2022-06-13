@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Virtual Keyboard</title>
-</head>
-<body>
-  <textarea name="page" id="page" cols="30" rows="10"></textarea>
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="./styles/style.css" rel="stylesheet">
+    <title>Virtual Keyboard</title>
+  </head>
+  <body>
+    <textarea class="textarea" cols="30" id="page" name="page" rows="10"></textarea>
     <div class="keyboard">
       <div class="row1">
-        <button>D</button>
+        <button class="btn">d</button>
+        <button class="btn">s</button>
+        <button class="backspace">Backspace</button>
+        <button class="space">Space</button>
+        <button class="capslock">Capslock</button>
+        <button class="enter">Enter/Return</button>
       </div>
       <div class="row2"></div>
       <div class="row3"></div>
       <div class="row4"></div>
     </div>
     <script src="./keyboard.js"></script>
-</body>
+  </body>
 </html>
