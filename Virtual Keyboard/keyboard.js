@@ -16,7 +16,6 @@ btns.forEach(function(btn) {
     } else {
       textarea.value += btn.innerHTML.toLowerCase();
     }
-    console.log(textarea.value);
   });
 });
 
@@ -33,14 +32,4 @@ backspace.addEventListener("click", function() {
 // Capslock
 capslock.addEventListener("click", function() {
   capslock.classList.toggle("activated");
-});
-
-enter.addEventListener("click", function() {
-  // textarea.value += textarea.value.innerHTML.;
-  // textarea.value += textarea.append("\bn");
-  // console.log(textarea.value.innerHTML);
-  // textarea.value += enter.innerHTML;
-  // textarea.value.append()
-  textarea.value.add("<br>");
-  console.log(textarea.value);
 });

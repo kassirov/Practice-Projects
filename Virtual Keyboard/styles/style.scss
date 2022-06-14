@@ -10,8 +10,48 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  height: 100vh;
 }
 
 .activated {
   background-color: #777;
+}
+
+// Global styles end
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px 0px 20px;
+  width: 50%;
+  margin: auto;
+}
+
+.backspace,
+.space,
+.capslock,
+.btn {
+  padding: 2rem;
+  margin: 0.5rem 0.5rem 0.5rem 0rem;
+  font-size: 1.8rem;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.row5 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.space {
+  width: 70%;
 }

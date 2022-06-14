@@ -11,9 +11,71 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  height: 100vh;
 }
 
 .activated {
   background-color: #777;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 20px 0px 20px;
+  width: 50%;
+  margin: auto;
+}
+
+.backspace,
+.space,
+.capslock,
+.btn {
+  padding: 2rem;
+  margin: 0.5rem 0.5rem 0.5rem 0rem;
+  font-size: 1.8rem;
+}
+
+.keyboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.row5 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.space {
+  width: 70%;
 }
 /*# sourceMappingURL=style.css.map */
