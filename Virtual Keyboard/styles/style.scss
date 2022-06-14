@@ -11,10 +11,13 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
+  max-height: 100vh;
+  background: linear-gradient(34deg, rgb(238, 238, 238), rgb(119, 119, 119));
 }
 
 .activated {
-  background-color: #777;
+  background-color: #777 !important;
+  border: 1px solid black;
 }
 
 // Global styles end
@@ -25,17 +28,35 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0px 20px 0px 20px;
-  width: 50%;
+  max-width: 1440px;
   margin: auto;
+  height: 100vh;
 }
 
 .backspace,
 .space,
 .capslock,
 .btn {
-  padding: 2rem;
-  margin: 0.5rem 0.5rem 0.5rem 0rem;
-  font-size: 1.8rem;
+  padding: 1.3rem 1.5rem 1.3rem 1.5rem;
+  margin: 0.4rem 0.4rem 0.4rem 0rem;
+  font-size: 1.6rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.801);
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+
+.backspace:hover,
+.space:hover,
+.capslock:hover,
+.btn:hover {
+  background-color: white;
+  color: black;
+  outline: 1px solid black;
+  opacity: 0.8;
 }
 
 .keyboard {
@@ -54,4 +75,77 @@ body {
 
 .space {
   width: 70%;
+}
+
+// Textarea
+
+textarea {
+  max-width: 1040px;
+  width: 100%;
+  margin-bottom: 3rem;
+  min-height: 200px;
+  outline: none;
+  resize: none;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+  border: 1.5px solid black;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.404);
+}
+
+// media quieres
+
+@media screen and (max-width: 610px) {
+  .backspace,
+  .space,
+  .capslock,
+  .btn {
+    padding: 1rem 1.2rem 1rem 1.2rem;
+    margin: 0.2rem 0.2rem 0.2rem 0rem;
+    font-size: 1.3rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.801);
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.5s all ease;
+  }
+}
+
+@media screen and (max-width: 493px) {
+  .backspace,
+  .space,
+  .capslock,
+  .btn {
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    margin: 0.2rem 0.2rem 0.2rem 0rem;
+    font-size: 1.3rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.801);
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.5s all ease;
+  }
+}
+
+@media screen and (max-width: 446px) {
+  .backspace,
+  .space,
+  .capslock,
+  .btn {
+    padding: 0.5rem 0.6rem 0.5rem 0.6rem;
+    margin: 0.1rem 0.1rem 0.1rem 0rem;
+    font-size: 1.4rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.801);
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.5s all ease;
+  }
 }
